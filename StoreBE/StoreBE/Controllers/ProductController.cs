@@ -16,6 +16,10 @@ namespace StoreBE.Controllers
         {
             this._context = context;
         }
+        /// <summary>
+        /// گرفتن تمامی محصولات
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<ApiResult>> GetAllProductsAsync()
         {
@@ -41,6 +45,11 @@ namespace StoreBE.Controllers
             }
 
         }
+        /// <summary>
+        /// یافتن یک محصول
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<ApiResult>> GetProductByIdAsync(int id)
         {
@@ -65,6 +74,11 @@ namespace StoreBE.Controllers
                 };
             }
         }
+        /// <summary>
+        /// ایجاد یک محصول جدید
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<ApiResult>> AddProduct(AddProductRequest request)
         {
@@ -96,6 +110,11 @@ namespace StoreBE.Controllers
                 };
             }
         }
+        /// <summary>
+        /// حذف یک محصول
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         public async Task<ActionResult<ApiResult>> RemoveProductById(int id)
         {
@@ -125,6 +144,11 @@ namespace StoreBE.Controllers
                 };
             }
         }
+        /// <summary>
+        /// ویرایش یک محصول
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<ActionResult<ApiResult>> EditProduct(EditProductRequest request)
         {
