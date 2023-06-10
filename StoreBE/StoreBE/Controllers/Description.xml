@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StoreBE</name>
+    </assembly>
+    <members>
+        <member name="M:StoreBE.Controllers.ProductController.GetAllProductsAsync">
+            <summary>
+            گرفتن تمامی محصولات
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreBE.Controllers.ProductController.GetProductByIdAsync(System.Int32)">
+            <summary>
+            یافتن یک محصول
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreBE.Controllers.ProductController.AddProduct(StoreBE.Dtos.AddProductRequest)">
+            <summary>
+            ایجاد یک محصول جدید
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreBE.Controllers.ProductController.RemoveProductById(System.Int32)">
+            <summary>
+            حذف یک محصول
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreBE.Controllers.ProductController.EditProduct(StoreBE.Dtos.EditProductRequest)">
+            <summary>
+            ویرایش یک محصول
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StoreBE.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:StoreBE.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StoreBE.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StoreBE.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
